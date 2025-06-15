@@ -1,0 +1,47 @@
+# Web framework
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# ORM
+SQLAlchemy==2.0.23
+
+# Data validation and settings
+pydantic==2.8.0
+pydantic-settings==2.6.1
+
+# HTTP client (compatible with groq)
+httpx==0.27.0
+
+# Groq API client (AI-related)
+groq==0.4.2
+
+# Multipart support
+python-multipart==0.0.6
+
+# Logging
+loguru==0.7.2
+
+# ASGI utilities
+starlette==0.27.0
+anyio==3.7.1
+h11==0.14.0
+sniffio==1.3.0
+click==8.1.7
+
+# Type checking and support
+typing-extensions==4.9.0
+typing-inspect==0.9.0
+mypy-extensions==1.0.0
+
+# Tokenizer for LLMs
+tiktoken==0.5.2
+
+# Regex and IDNA support
+regex==2023.12.25
+idna==3.6
+
+# Vector DB client
+weaviate-client==4.11.1

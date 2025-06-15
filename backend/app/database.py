@@ -6,7 +6,7 @@ def init_db():
     Base.metadata.create_all(bind=engine)
 
 def seed_database(db: Session):
-    # Check if database is already seeded
+    
     if db.query(Customer).first():
         return
 
@@ -19,7 +19,7 @@ def seed_database(db: Session):
         Customer(name="Sarah Brown", gender="Female", location="Mumbai"),
     ]
 
-    # Add customers to database
+    
     for customer in customers:
         db.add(customer)
     
@@ -33,9 +33,9 @@ def get_customers_by_query(db: Session, query: str):
     Execute a raw SQL query using SQLAlchemy text()
     """
     try:
-        # Convert the query string to SQLAlchemy text object
+        
         sql_query = text(query)
-        # Execute the query
+        
         result = db.execute(sql_query)
         return result.fetchall()
     except Exception as e:
